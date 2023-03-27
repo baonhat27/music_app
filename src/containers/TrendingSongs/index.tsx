@@ -25,7 +25,14 @@ function TrendingSongs() {
               } `}
               onClick={handleChangeCate(item)}
             >
-              {categoryName?.[item]}
+              {
+                categoryName?.[
+                  item as keyof {
+                    VN: string
+                    IN: string
+                  }
+                ]
+              }
             </div>
           )
         })}
