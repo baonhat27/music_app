@@ -1,15 +1,18 @@
 import Image from 'next/image'
 import React, {useState} from 'react'
 import PauseIcon from '@/public/images/Pause.svg'
+import PlayIcon from '@/public/images/Play.svg'
+import Line from '@/public/images/Line.svg'
 
 function PlayingBar() {
-  const [isPlaying, setIsPlaying] = useState(true)
+  const [isPlaying, setIsPlaying] = useState(false)
 
   const handleClickPlayOrPause = () => {
     setIsPlaying(!isPlaying)
   }
   return (
-    <div className="flex items-center justify-between h-[84px] rounded-[40px] bg-[#361E60] px-[16px] py[12px]">
+    <div className="w-[calc(100%-40px)] fixed bottom-0 flex items-center justify-between h-[70px] rounded-[40px] bg-[#361E60] px-[16px] py[12px] mb-[10px]">
+      <Line className="absolute right-[-5px] top-[-5px] z-[-999]" />
       <div className="flex gap-[12px] flex-1 h-[38px]">
         <Image
           src="/images/playingMusic.png"
@@ -23,7 +26,11 @@ function PlayingBar() {
           <p className="subText">Imagine Dragon</p>
         </div>
       </div>
-      <PauseIcon onClick={handleClickPlayOrPause} />
+      {isPlaying ? (
+        <PauseIcon onClick={handleClickPlayOrPause} />
+      ) : (
+        <PlayIcon onClick={handleClickPlayOrPause} />
+      )}
     </div>
   )
 }

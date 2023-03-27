@@ -6,8 +6,9 @@ import TrendingSongs from '@/src/containers/TrendingSongs'
 import TrendingArtist from '@/src/containers/TrendingArtist'
 import TrendingAlbums from '@/src/containers/TrendingAlbum'
 import PlayingBar from '@/src/components/Playing'
+import withBottomBar from '@/src/layout/withBottomBar'
 
-export default function Home() {
+function Home() {
   return (
     <>
       <div className="w-full h-full flex flex-col gap-[36px]">
@@ -30,9 +31,9 @@ export default function Home() {
         <TrendingArtist />
 
         <TrendingAlbums />
-
-        <PlayingBar />
       </div>
     </>
   )
 }
+
+export default withBottomBar(Home)
