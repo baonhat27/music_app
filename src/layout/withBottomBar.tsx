@@ -2,7 +2,7 @@
 import React from 'react'
 import PlayingBar from '../components/Playing'
 
-const withBottomBar = (WrappedComponnent) => (props) => {
+const withBottomBar = (WrappedComponnent: any) => (props: any) => {
   return (
     <>
       <div className="w-full h-full flex flex-col pb-[80px]">
