@@ -15,6 +15,11 @@ module.exports = {
     extend: {
       colors: {
         bgColor: '#1A0938',
+        mainTextColor: '#FFFFFF',
+        subTextColor: '#A7A7A7',
+      },
+      animation: {
+        'spin-slow': 'spin 2s linear infinite',
       },
     },
   },
