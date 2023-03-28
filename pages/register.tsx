@@ -1,9 +1,9 @@
 import React from 'react'
 import HeadPhone from '@/public/images/headphones.svg'
-import {LoginForm} from '@/src/containers/Start'
+import {RegisterForm} from '@/src/containers/Start'
 import NextIcon from '@/public/images/Next.svg'
 
-export default function Login() {
+export default function Register() {
   return (
     <>
       <HeadPhone className="mt-[60px]" />
@@ -11,7 +11,7 @@ export default function Login() {
       <p className="text-sm text-[#E7E7E7] font-medium text-center mt-[8px] ">
         Music is not an entertainment, but also it is our life
       </p>
-      <LoginForm />
+      <RegisterForm />
       <NextIcon className="mt-[70px]" />
     </>
   )
