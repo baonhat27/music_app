@@ -6,8 +6,8 @@ import More from '@/public/images/More.svg'
 import withBottomBar from '@/src/layout/withBottomBar'
 import Image from 'next/image'
 import SongCard from '@/src/components/SongCard'
-import songsInAlbum from './mock'
 import {useRouter} from 'next/router'
+import songsInAlbum from '@/src/utils/mock'
 
 function AlbumDetail() {
   const router = useRouter()
