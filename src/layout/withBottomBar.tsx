@@ -5,7 +5,7 @@ import PlayingBar from '../components/Playing'
 const withBottomBar = (WrappedComponnent: any) => (props: any) => {
   return (
     <>
-      <div className="w-full h-full flex flex-col pb-[80px]">
+      <div className="w-full h-full flex flex-col">
         <WrappedComponnent {...props} />
       </div>
       <PlayingBar />

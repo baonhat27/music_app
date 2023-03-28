@@ -1,6 +1,6 @@
 import React from 'react'
 import MusicIcon from '@/public/images/music.svg'
-import HeartIcon from '@/public/images/heart.svg'
+import HeartIcon from '@/public/images/heart2.svg'
 
 interface SongProps {
   name: string
