@@ -21,6 +21,10 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 2s linear infinite',
       },
+      backgroundImage: {
+        subBg:
+          'linear-gradient(180deg, rgba(213, 18, 193, 0.7) 0%, #1A0938 39.57%, #1A0938 39.58%)',
+      },
     },
   },
   plugins: [],
