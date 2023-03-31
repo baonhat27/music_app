@@ -10,6 +10,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
+      sans: ['Montserrat'],
       poppins: ['Poppins'],
     },
     extend: {
@@ -24,6 +25,8 @@ module.exports = {
       backgroundImage: {
         subBg:
           'linear-gradient(180deg, rgba(213, 18, 193, 0.7) 0%, #1A0938 39.57%, #1A0938 39.58%)',
+        linearText:
+          'linear-gradient(90deg, #D91193 -29.35%, #D91193 -29.35%, #22DDF2 149.17%)',
       },
     },
   },
